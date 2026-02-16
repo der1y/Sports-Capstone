@@ -19,4 +19,12 @@ export default {
     return axios.get(`/users/${userId}`);
   },
 
+  getStandings() {
+    return axios.get('/standing');
+  },
+
+  getPlayersByTeam(team) {
+    return axios.get(`/players/${team}`);
+  }
+
 }
